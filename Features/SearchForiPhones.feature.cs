@@ -81,19 +81,12 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I open \'https://rozetka.com.ua/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.And("I search for \'Apple iPhone\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Phone"});
-            table1.AddRow(new string[] {
-                        "iPhone 7"});
-            table1.AddRow(new string[] {
-                        "iphone 7 Plus"});
 #line 10
- testRunner.When("I search for a phone characteristics", ((string)(null)), table1, "When ");
-#line 14
- testRunner.And("I save similar phone\'s characteristics", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
- testRunner.Then("The similar characteristics are available in Console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I search for \'iPhone 7,iPhone 7 Plus\' characteristics", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+ testRunner.Then("I save similar phone\'s characteristics", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.And("The similar characteristics are available in a file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

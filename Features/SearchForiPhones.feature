@@ -7,9 +7,6 @@
 Scenario: Compare iPhone7 and iPhone7 plus
 	Given I open 'https://rozetka.com.ua/'
 	And I search for 'Apple iPhone'
-	When I search for a phone characteristics 
-	| Phone         |
-	| iPhone 7      |
-	| iphone 7 Plus |
-	And I save similar phone's characteristics
-	Then The similar characteristics are available in Console
+	And I search for 'iPhone 7,iPhone 7 Plus' characteristics 
+	Then I save similar phone's characteristics
+	And The similar characteristics are available in a file

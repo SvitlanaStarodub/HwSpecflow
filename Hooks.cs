@@ -12,22 +12,17 @@ namespace SpecflowHw
     public class Hooks
     {
         private readonly IObjectContainer container;
-
+      
         public Hooks(IObjectContainer container)
         {
             this.container = container;
-        }
 
-        //[BeforeScenario]
-        //public void RegisterChromeDriver()
-        //{
-            
-        //}
+        }
 
         [BeforeScenario]
         public void SetBrowser()
         {
-            var driver = Driver.CreateDriver;
+            var driver = DriverHelper.Driver;
             container.RegisterInstanceAs(driver);
             driver.Manage().Window.Maximize();
         }

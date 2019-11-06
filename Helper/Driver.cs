@@ -7,11 +7,11 @@ using OpenQA.Selenium.Chrome;
 
 namespace SpecflowHw.Helper
 {
-    public static class Driver
+    public static class DriverHelper
     {
         private static IWebDriver _driver;
 
-        public static IWebDriver CreateDriver
+        public static IWebDriver Driver
         {
             get
             {
